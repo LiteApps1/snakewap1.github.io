@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка на Nomu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        #game-container {
+            border: 2px solid #333;
+            margin: 10px auto;
+            max-width: 300px;
+            background-color: #fff;
+        }
+        canvas {
+            background-color: #000;
+        }
+        #controls {
+            margin-top: 10px;
+        }
+        button, select {
+            padding: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #score-display {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐍 Змейка для Nomu 🐍</h1>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="200" height="200"></canvas>
+    </div>
+    <div id="controls">
+        <label for="speed">Скорость: </label>
+        <select id="speed">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <button id="pauseButton">Пауза</button>
+    </div>
+    <div id="score-display">Очки: <span id="score">0</span></div>
+    <script src="snake.js"></script>
+</body>
+</html>
